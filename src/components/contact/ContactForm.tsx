@@ -38,7 +38,7 @@ export default function ContactForm() {
         target="_blank"
         onSubmit={onSubmit}
         method="POST"
-        action="https://formsubmit.co/suyogvilankar33@gmail.com"
+        action={`${process.env.FORM}`}
         className={`${pt_sans.className} flex flex-col gap-2 mx-auto`}
       >
         <input
