@@ -21,9 +21,7 @@ const alice = Alice({
 
 export default function Footer() {
     return (
-        <div
-            className={`${pt_sans.className} bg-[#005F5F] text-white w-full p-3 text-md leading-loose flex flex-col items-center justify-center md:flex-row md:items-start md:justify-between gap-3`}
-        >
+        <div className={`${pt_sans.className} bg-[#005F5F] text-white w-full p-3 text-md leading-loose flex flex-col items-center justify-center md:flex-row md:items-start md:justify-between gap-3`}>
             <div className="flex flex-col items-center justify-center md:items-start md:justify-start">
                 <h1 className={`${sacramento.className} text-2xl mb-1`}>
                     Suyog V. Photography
@@ -72,7 +70,10 @@ export default function Footer() {
                     About
                 </Link>
 
-                <Link href={"/faq"}>
+                <Link
+                    href={"/faq"}
+                    className="transform translate-y-0 transition-all duration-150 hover:translate-y-[-2px]"
+                >
                     Faq
                 </Link>
             </div>

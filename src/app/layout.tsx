@@ -1,4 +1,5 @@
 import "./globals.css";
+import Scroll from "../components/scroll/Scroll";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import { Metadata } from "next";
@@ -22,16 +23,6 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://www.suyogvilankarphotography.space/",
     siteName: "Suyog Vilankar Photography",
-    /*
-    images: [
-      {
-        url: "https://www.suyogvilankarphotography.space/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Suyog Vilankar Photography - Wedding Photographer Ratnagiri",
-      },
-    ],
-    */
   },
   alternates: {
     canonical: "https://www.suyogvilankarphotography.space/",
@@ -45,9 +36,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`bg-[#FFF8E7] flex flex-col justify-between w-full min-h-[100vh]`}
-      >
+      <body  className={`bg-[#FFF8E7] flex flex-col justify-between w-full min-h-[100vh]`}>
+        <Scroll/>
+
         <nav>
           <Navbar />
         </nav>
