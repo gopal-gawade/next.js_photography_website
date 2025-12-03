@@ -19,7 +19,7 @@ const alice = Alice({
 export const metadata: Metadata = {
   title: "About the Best Photographer in Ratnagiri | Suyog Vilankar",
   description:
-    "I’m Suyog Vilankar — a civil engineer by degree, but a photographer by passion. Since 2020, I’ve been capturing weddings, pre-weddings, and candid moments across Ratnagiri & Sindhudurg. Known as one of the best wedding photographers in Ratnagiri, my goal is to preserve your true emotions and stories with honesty and artistry.",
+    "I'm Suyog Vilankar — a civil engineer by degree, but a photographer by passion. Since 2020, I've been capturing weddings, pre-weddings, and candid moments across Ratnagiri & Sindhudurg. Known as one of the best wedding photographers in Ratnagiri, my goal is to preserve your true emotions and stories with honesty and artistry.",
   keywords: [
     "best photographer in Ratnagiri",
     "best wedding photographer in Ratnagiri",
@@ -33,25 +33,42 @@ export const metadata: Metadata = {
     title: "About Suyog Vilankar | Top Wedding Photographer in Ratnagiri",
     description:
       "Civil engineer turned professional photographer — Suyog Vilankar is one of the top wedding photographers in Ratnagiri & Sindhudurg, capturing timeless emotions since 2020.",
-    url: "https://www.suyogvilankarphotography.space/about",
+    url: "https://suyogvilankarphotography.netlify.app/about",
     type: "profile",
-    /*
-    images: [
-      {
-        url: "https://www.suyogvilankarphotography.space/og-about.jpg",
-        width: 1200,
-        height: 630,
-        alt: "About Best Wedding Photographer in Ratnagiri - Suyog Vilankar",
-      },
-    ],
-    */
   },
   alternates: {
-    canonical: "https://www.suyogvilankarphotography.space/about",
+    canonical: "https://suyogvilankarphotography.netlify.app/about",
   },
 };
 
 export default function About() {
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Suyog Vilankar",
+    jobTitle: "Wedding Photographer",
+    description:
+      "Professional wedding and candid photographer based in Ratnagiri & Sindhudurg. Specializing in emotional, artistic, and storytelling photography.",
+    url: "https://suyogvilankarphotography.netlify.app/about",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Ratnagiri",
+      addressRegion: "Maharashtra",
+      addressCountry: "India",
+    },
+    sameAs: [
+      "https://www.facebook.com/suyog.vilankar/",
+      "https://www.instagram.com/photos_by_suyog/",
+    ],
+    knowsAbout: [
+      "Wedding Photography",
+      "Candid Photography",
+      "Pre Wedding Shoots",
+      "Portrait Photography",
+      "Photography Editing",
+    ],
+  };
+
   return (
     <div className="p-6 mx-auto text-md leading-loose w-full min-h-[100vh]">
       <h1 className={`${alice.className} text-[#800000] text-3xl md:text-4xl text-center p-6 mt-16`}>
@@ -72,7 +89,7 @@ export default function About() {
           <h1
             className={`${alice.className} text-xl md:text-2xl lg:text-3xl mb-2`}
           >
-            Hello. I’m Suyog Vilankar
+            Hello. I'm Suyog Vilankar
           </h1>
           <p className={pt_sans.className}>
             I’m a civil engineer by degree (Class of 2018), but a photographer
@@ -112,6 +129,11 @@ export default function About() {
           </div>
         </div>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
     </div>
   );
 }

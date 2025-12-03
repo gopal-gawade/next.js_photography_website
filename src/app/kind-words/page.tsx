@@ -15,9 +15,7 @@ const alice = Alice({
 export default function KindWords() {
     return (
         <div className="p-6 mx-auto text-md leading-loose w-full h-full">
-            <h1
-                className={`${alice.className} text-[#800000] text-3xl md:text-4xl text-center p-6 mt-16`}
-            >
+            <h1 className={`${alice.className} text-[#800000] text-3xl md:text-4xl text-center p-6 mt-16`}>
                 Kind words
             </h1>
 
@@ -33,9 +31,7 @@ export default function KindWords() {
                 </div>
 
                 <div className="text-md leading-loose p-2 w-full">
-                    <h1
-                        className={`${alice.className} text-xl md:text-2xl lg:text-3xl mb-2`}
-                    >
+                    <h1 className={`${alice.className} text-xl md:text-2xl lg:text-3xl mb-2`}>
                         Sanket & Manali
                     </h1>
                     <p className={pt_sans.className}>
@@ -52,15 +48,13 @@ export default function KindWords() {
 
             <div className="flex flex-col-reverse items-center justify-center md:flex-row max-w-[900px] mx-auto p-3 border-b-1 border-[#D4AF37]">
                 <div className="text-md leading-loose p-2 w-full">
-                    <h1
-                        className={`${alice.className} text-xl md:text-2xl lg:text-3xl mb-2`}
-                    >
+                    <h1 className={`${alice.className} text-xl md:text-2xl lg:text-3xl mb-2`}>
                         Neha
                     </h1>
                     <p className={pt_sans.className}>
-                        My maternity shoot with Suyog was an incredible experience. He captured this special phase with so much care, warmth, and creativity. 
-                        His calm nature made me feel completely at ease, and the photos turned out beautifully — natural, emotional, and full of love. 
-                        I couldn’t be happier with the results, and my family adored the pictures too. I’m so glad I chose him. 
+                        My maternity shoot with Suyog was an incredible experience. He captured this special phase with so much care, warmth, and creativity.
+                        His calm nature made me feel completely at ease, and the photos turned out beautifully — natural, emotional, and full of love.
+                        I couldn’t be happier with the results, and my family adored the pictures too. I’m so glad I chose him.
                         A perfect 10/10!
                     </p>
                 </div>
@@ -88,9 +82,7 @@ export default function KindWords() {
                 </div>
 
                 <div className="text-md leading-loose p-2 w-full">
-                    <h1
-                        className={`${alice.className} text-xl md:text-2xl lg:text-3xl mb-2`}
-                    >
+                    <h1 className={`${alice.className} text-xl md:text-2xl lg:text-3xl mb-2`}>
                         Hrishikesh & Aishwarya
                     </h1>
                     <p className={pt_sans.className}>

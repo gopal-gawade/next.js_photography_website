@@ -251,9 +251,7 @@ export default async function Photography({
 
     return (
         <div className="text-[#2B2B2B] max-w-[1200px] p-6 mx-auto text-center text-md leading-loose flex flex-col items-center justify-center min-h-[100vh]">
-            <h1
-                className={`${alice.className} text-[#800000] text-2xl md:text-4xl text-center p-6 mb:3 md:mb-6 mt-16`}
-            >
+            <h1 className={`${alice.className} text-[#800000] text-2xl md:text-4xl text-center p-6 mb:3 md:mb-6 mt-16`}>
                 {photograph.charAt(0).toLocaleUpperCase() + photograph.slice(1) ===
                     "Baby-shower"
                     ? "Baby Shower"

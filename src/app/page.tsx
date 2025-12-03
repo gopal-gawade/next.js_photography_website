@@ -10,63 +10,90 @@ const open_sans = Open_Sans({
 export const metadata: Metadata = {
   title: "Best Wedding Photographer in Ratnagiri | Top Photographer Suyog Vilankar",
   description:
-    "Looking for the best wedding photographer in Ratnagiri? Suyog Vilankar is a top photographer in Ratnagiri, specializing in candid wedding photography, pre-weddings, and timeless love stories.",
+    "Searching for the best wedding photographer in Ratnagiri? Suyog Vilankar specializes in wedding, candid, pre-wedding, engagement, maternity & baby photography across Ratnagiri & Sindhudurg.",
   keywords: [
-    "best photographer in Ratnagiri",
     "best wedding photographer in Ratnagiri",
+    "best photographer in Ratnagiri",
     "top photographer in Ratnagiri",
-    "top wedding photographer in Ratnagiri",
-    "candid photography Ratnagiri",
-    "Sindhudurg wedding photography",
+    "candid photographer Ratnagiri",
+    "pre wedding photoshoot Ratnagiri",
+    "engagement photography Ratnagiri",
+    "maternity photoshoot Ratnagiri",
+    "Sindhudurg wedding photographer",
+    "Ratnagiri wedding photographer",
   ],
   openGraph: {
-    title: "Best Wedding Photographer in Ratnagiri | Suyog Vilankar",
+    title: "Best Wedding Photographer in Ratnagiri | Top Photographer Suyog Vilankar",
     description:
-      "Top photographer in Ratnagiri capturing heartfelt weddings and pre-wedding moments. Book Suyog Vilankar Photography for authentic and timeless memories.",
-    url: "https://www.suyogvilankarphotography.space/",
+      "Top-rated photographer in Ratnagiri capturing weddings, candid moments, pre-weddings, engagements, maternity & baby shoots with creative storytelling.",
+    url: "https://www.suyogvilankarphotography.netlify.app/",
     type: "website",
-   /*
-    images: [
-      {
-        url: "https://www.suyogvilankarphotography.space/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Best Wedding Photographer in Ratnagiri - Suyog Vilankar",
-      },
-    ],
-   */
   },
   alternates: {
-    canonical: "https://www.suyogvilankarphotography.space/",
+    canonical: "https://www.suyogvilankarphotography.netlify.app/",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
 export default function Home() {
+  const homeSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Best Wedding Photographer in Ratnagiri | Top Photographer Suyog Vilankar",
+    "url": "https://www.suyogvilankarphotography.netlify.app/",
+    "description":
+      "Searching for the best wedding photographer in Ratnagiri? Suyog Vilankar specializes in wedding, candid, pre-wedding, engagement, maternity & baby photography across Ratnagiri & Sindhudurg.",
+    "publisher": {
+      "@type": "LocalBusiness",
+      "name": "Suyog Vilankar Photography",
+      "url": "https://www.suyogvilankarphotography.netlify.app/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ratnagiri",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "India"
+      },
+      "areaServed": ["Ratnagiri", "Sindhudurg", "Maharashtra", "Konkan"],
+      "sameAs": [
+        "https://www.instagram.com/photos_by_suyog/",
+        "https://www.facebook.com/suyog.vilankar/"
+      ]
+    },
+
+    "about": {
+      "@type": "Person",
+      "name": "Suyog Vilankar",
+      "jobTitle": "Wedding Photographer",
+      "knowsAbout": [
+        "wedding photography",
+        "candid photography",
+        "pre-wedding photography",
+        "engagement shoots",
+        "maternity photoshoots",
+        "baby photography"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ratnagiri",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "India"
+      }
+    }
+  };
+
   return (
     <div className={`${open_sans.className} flex flex-col items-center justify-between min-h-screen bg-[#FFF8E7]`} >
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Best Wedding Photographer in Ratnagiri | Suyog V. Photography",
-            description:
-              "Best wedding photographer in Ratnagiri. Capture your special day with Suyog V. Photography, offering heartfelt wedding photography in Ratnagiri.",
-            url: "https://suyog-vilankar-photography.vercel.app",
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Ratnagiri",
-              addressRegion: "Maharashtra",
-              addressCountry: "India",
-            },
-          }),
-        }}
-      />
-
       <main className="w-full h-full">
         <Homepage />
       </main>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }}
+      />
     </div>
   );
 }
