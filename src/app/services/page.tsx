@@ -104,7 +104,7 @@ export default function Services() {
     };
 
     return (
-        <div className={`${alice.className} p-6 mx-auto text-md leading-loose max-w-[1200px] h-full flex flex-col justify-center gap-6 py-6`}>
+        <div className={`${alice.className} p-6 pt-12 mx-auto text-md leading-loose max-w-[1200px] h-full flex flex-col justify-center gap-6 py-6`}>
             <h1 className={`text-[#800000] text-3xl md:text-4xl text-center p-6 mt-16`}>
                 Services
             </h1>

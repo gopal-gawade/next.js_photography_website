@@ -59,18 +59,19 @@ export default async function Blog({
     ];
 
     return (
-        <div className="p-6 mx-auto text-md leading-loose w-full min-h-[100vh]">
-            <h1
-                className={`${alice.className} text-[#800000] text-3xl md:text-4xl text-center p-6 mt-16`}
-            >
+        <div className="p-6 pt-12 mx-auto text-md leading-loose w-full min-h-[100vh]">
+            <h1 className={`${alice.className} text-[#800000] text-3xl md:text-4xl text-center p-6 mt-16`}>
                 Capturing Timeless Memories with Suyog Vilankar
             </h1>
 
             {blogs
                 .filter((v) => v.id === Number(blog_id))
-                .map((v) => {
+                .map((v, i) => {
                     return (
-                        <div className="flex flex-col items-center justify-center md:flex-row max-w-[1200px] mx-auto">
+                        <div
+                            key={i}
+                            className="flex flex-col items-center justify-center md:flex-row max-w-[1200px] mx-auto"
+                        >
                             <div className="w-full h-full flex items-center justify-center">
                                 <ImageKitProvider urlEndpoint={process.env.IMAGEKIT}>
                                     <Image

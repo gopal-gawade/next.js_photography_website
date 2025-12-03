@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-    title: "Contact | Suyog Vilankar Photography – Book Your Photoshoot in Ratnagiri",
+    title: "Contact | Suyog Vilankar Photography - Book Your Photoshoot in Ratnagiri",
     description:
         "Get in touch with Suyog Vilankar Photography for wedding, pre-wedding, maternity, baby shower & engagement shoots in Ratnagiri & Sindhudurg. Fill out the contact form to book your photoshoot.",
     keywords: [

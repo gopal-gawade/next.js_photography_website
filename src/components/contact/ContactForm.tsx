@@ -29,7 +29,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="p-6 mx-auto text-md leading-loose w-full h-full flex flex-col items-center justify-start min-h-[100vh]">
+    <div className="p-6 pt-12 mx-auto text-md leading-loose w-full h-full flex flex-col items-center justify-start min-h-[100vh]">
       <h1 className={`${alice.className} text-[#800000] text-3xl md:text-4xl text-center p-6 mt-16`}>
         Get in touch
       </h1>

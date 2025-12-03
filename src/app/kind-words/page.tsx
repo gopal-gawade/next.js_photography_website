@@ -14,7 +14,7 @@ const alice = Alice({
 
 export default function KindWords() {
     return (
-        <div className="p-6 mx-auto text-md leading-loose w-full h-full">
+        <div className="p-6 pt-12 mx-auto text-md leading-loose w-full h-full">
             <h1 className={`${alice.className} text-[#800000] text-3xl md:text-4xl text-center p-6 mt-16`}>
                 Kind words
             </h1>

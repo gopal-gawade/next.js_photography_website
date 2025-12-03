@@ -1,6 +1,7 @@
 "use client";
 
 import { Alice, Sacramento } from "next/font/google";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
@@ -45,9 +46,13 @@ export default function Navbar() {
         }`}
     >
       <Link href="/">
-        <h1 className={`${sacramento.className} ${show ? "hidden" : "block"} md:block text-3xl`}>
-          Suyog V. Photography
-        </h1>
+        <Image
+          src={'/logo.png'}
+          alt='Suyog V. Photography'
+          height={150}
+          width={150}
+          className={`${sacramento.className} ${show ? "hidden" : "block"}`}
+        />
       </Link>
 
       <ul className="hidden md:flex md:flex-row items-center justify-end md:gap-4 lg:gap-8 text-md font-[500]">
@@ -146,9 +151,13 @@ export default function Navbar() {
       <div className={`bg-[#800000] text-white transition-all duration-300 absolute md:hidden w-48 h-screen top-0 bottom-0 z-20 ${show ? "left-[0]" : "left-[-100%]"}`}>
         <ul className="h-full flex flex-col items-center justify-start gap-8 pt-12 text-md font-[500]">
           <Link href="/">
-            <h1 className={`${sacramento.className} text-xl`}>
-              Suyog V. Photography
-            </h1>
+            <Image
+              src={'/logo.png'}
+              alt='Suyog V. Photography'
+              height={150}
+              width={150}
+              className={`${sacramento.className} ${show ? "hidden" : "block"}`}
+            />
           </Link>
 
           <li className="transform translate-y-0 transition-all duration-150 hover:translate-y-[-2px]">

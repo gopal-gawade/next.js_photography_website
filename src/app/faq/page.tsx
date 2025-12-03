@@ -17,7 +17,7 @@ export default function Faq() {
         {
             id: 1,
             ques: "Why should we trust you to bring our visual ideas to life?",
-            ans: "I’m Suyog Vilankar, a passionate wedding photographer since 2020, known for capturing authentic emotions, spontaneous moments, and beautiful details with a creative eye and modern techniques—combining artistry and technology to tell your unique love story in the most natural, vibrant, and unforgettable way, while ensuring a seamless, professional experience from shoot to delivery.",
+            ans: "I'm Suyog Vilankar, a passionate wedding photographer since 2020, known for capturing authentic emotions, spontaneous moments, and beautiful details with a creative eye and modern techniques—combining artistry and technology to tell your unique love story in the most natural, vibrant, and unforgettable way, while ensuring a seamless, professional experience from shoot to delivery.",
         },
         {
             id: 2,
@@ -27,19 +27,19 @@ export default function Faq() {
         {
             id: 3,
             ques: "When can I expect to get the final pictures?",
-            ans: "I’ll share the best photos with you via WhatsApp or email on the night of the shoot or the next day, so you can share your story on social media. The full set of photos will be delivered on a pendrive within 10–12 days. Your wedding album, album bag, and photo frame will be ready within 1 to 1.5 months.",
+            ans: "I'll share the best photos with you via WhatsApp or email on the night of the shoot or the next day, so you can share your story on social media. The full set of photos will be delivered on a pendrive within 10–12 days. Your wedding album, album bag, and photo frame will be ready within 1 to 1.5 months.",
         },
         {
             id: 4,
             ques: "Are you available for outstation or destination wedding shoots?",
-            ans: "I’m based in Ratnagiri and happily available for destination wedding shoots across Ratnagiri and Sindhudurg districts. Whether you're planning a scenic celebration in the hills or a traditional wedding in your hometown, I’d love to be a part of it. I bring not just my camera, but my full dedication to capturing your big day with creativity, emotion, and detail. From intimate pre-wedding moments to grand celebrations, I ensure every memory is beautifully preserved. Let’s turn your wedding location into a stunning storybook of photographs!",
+            ans: "I'm based in Ratnagiri and happily available for destination wedding shoots across Ratnagiri and Sindhudurg districts. Whether you're planning a scenic celebration in the hills or a traditional wedding in your hometown, I’d love to be a part of it. I bring not just my camera, but my full dedication to capturing your big day with creativity, emotion, and detail. From intimate pre-wedding moments to grand celebrations, I ensure every memory is beautifully preserved. Let’s turn your wedding location into a stunning storybook of photographs!",
         },
     ];
 
     return (
-        <div className="p-6 mx-auto text-md leading-loose w-full min-h-[100vh]">
+        <div className="p-6 pt-12 mx-auto text-md leading-loose w-full min-h-[100vh]">
             <h1 className={`${alice.className} text-[#800000] text-3xl md:text-4xl text-center p-6 mt-16`}>
-                Confused? We’ve Got the Answers!
+                Confused? We've Got the Answers!
             </h1>
 
             {items.map((v) => {
